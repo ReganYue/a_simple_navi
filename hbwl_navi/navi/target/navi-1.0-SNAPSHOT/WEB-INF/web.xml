@@ -7,7 +7,15 @@
 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
 </welcome-file-list>
-    
+<servlet>
+    <servlet-name>queryServlet</servlet-name>
+    <servlet-class>com.hbwl.navi.controller.queryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>queryServlet</servlet-name>
+    <url-pattern>/admin/queryServlet</url-pattern>
+</servlet-mapping>
+
 <!--    -->
 <!--<error-page>-->
 <!--    <location>/admin/lyear_pages_error.html</location>-->

@@ -68,29 +68,14 @@
                     <tbody>
 
                     <script type="text/javascript">
-                      $(".table-responsive").load("../queryServlet")
+                      window.addEventListener("load", function(event) {
+                        // Now $ or JQuery is completly available
+                        // Now using JQuery.load() should be defined
+                        $(".table-responsive").load("queryServlet");
+                        // Do what you want, the window is entirely loaded and ready to use.
+                      });
+
                     </script>
-                    
-                      <tr>
-                        <td>
-                          <label class="lyear-checkbox checkbox-primary">
-                            <input type="checkbox" name="ids[]" value="10"><span></span>
-                          </label>
-                        </td>
-                        <td>10</td>
-                        <td>第一回 于按察山东赴任　邹其仁赴路登程</td>
-                        <td>《于公案》</td>
-                        <td>佚名</td>
-                        <td>37</td>
-                        <td><font class="text-success">正常</font></td>
-                        <td>
-                          <div class="btn-group">
-                            <a class="btn btn-xs btn-default" href="#!" title="编辑" data-toggle="tooltip"><i class="mdi mdi-pencil"></i></a>
-                            <a class="btn btn-xs btn-default" href="#!" title="查看" data-toggle="tooltip"><i class="mdi mdi-eye"></i></a>
-                            <a class="btn btn-xs btn-default" href="#!" title="删除" data-toggle="tooltip"><i class="mdi mdi-window-close"></i></a>
-                          </div>
-                        </td>
-                      </tr>
                     </tbody>
                   </table>
 
@@ -137,5 +122,7 @@ $(function(){
     });
 });
 </script>
+
+
 </body>
 </html>

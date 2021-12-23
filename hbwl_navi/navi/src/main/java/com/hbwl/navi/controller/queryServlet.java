@@ -14,7 +14,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/queryServlet")
 public class queryServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,7 +34,8 @@ public class queryServlet extends HttpServlet {
         }
 
         for(Site group:groupList){
-//            out.print(group.getCategoryName()+group.getIntroduction()+group.getSite()+group.getWebsiteName());
+            out.print("111111111111111111111");
+            out.print(group.getCategoryName()+group.getIntroduction()+group.getSite()+group.getWebsiteName());
             out.print("<tr>\n" +
                     "<td>\n" +
                     "<label class=\"lyear-checkbox checkbox-primary\">\n" +

@@ -22,7 +22,7 @@
 		<header>
 		
 		</header>
-		<div class="big-banner" style="background-image: url(../../../../../../导航站/static/images/nav-banner.jpg)">
+		<div class="big-banner" style="background-image: url(./static/images/nav-banner.jpg)">
 			<div class="big-banner-content">
 				<h1>精品实用网络资源导航，助你学习、工作和生活</h1>
 				<p>汇集优质的软件工具，学习资源，网站导航，希望可以惊到你</p>
@@ -159,9 +159,9 @@
 			
 		
 	
-		<script src="../../../../../../导航站/static/js/base64.js"></script>
+		<script src="./static/js/base64.js"></script>
 		
-		<script src="../../../../../../导航站/static/js/imyshare.js"></script>
+		<script src="./static/js/imyshare.js"></script>
 		<script>
 			fixedHeaderBg();
 			var navRightTop = $('.nav-right').offset().top; 
